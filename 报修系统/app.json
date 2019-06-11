@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/home/home",
+    "pages/me/me",
+    "pages/all/all",
+    "pages/loading/loading",
+    "pages/task/task"
+  ],
+
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#34e089",
+    "navigationBarTitleText": "实验室报修系统",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "selectedColor":"red",
+    "backgroundColor":"#34e089",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text":"我要报修",
+        "iconPath":"images/index.png",
+        "selectedIconPath":"images/index_act.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "个人中心",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_act.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+    <view class="table">
+      <view class="tr bg-w">
+       <view class="th">编号</view>
+        <view class="th">故障类型</view>
+        <view class="th">故障地点</view>
+        <view class="th ">报修时间</view>
+      </view>
+      <block wx:for="{{array}}" wx:key="{{id}}">
+        <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+          <view class="td">{{item.id}}</view>
+          <view class="td">{{item.cate}}</view>
+          <view class="td">{{item.place}}</view>
+          <view class="td">{{item.create_at}}</view>
+        </view>
+        <view class="tr" wx:else>
+          <view class="td">{{item.id}}</view>
+          <view class="td">{{item.cate}}</view>
+          <view class="td">{{item.place}}</view>
+          <view class="td">{{item.create_at}}</view>
+        </view>
+      </block>
+    </view>

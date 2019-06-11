@@ -1,0 +1,20 @@
+<view  class="userinfo">
+  <image class="userinfo-avatar" src='{{image_url}}'></image>
+</view>
+<view class='cont'>
+        <button>昵称：{{name}}</button>
+        <view class='sex'>
+        <block wx:if='{{gender==1}}'>
+            <button>性别：男</button>
+            </block>
+            <block wx:elif='{{gender==2}}'>
+            <button>性别：女</button>
+            </block>
+            <block wx:else>
+            <button>性别：未知</button>
+            </block>
+            </view>
+         <button>国家：{{country}}</button>
+         <button>省份：{{province}}</button>
+         <button>城市：{{city}}</button>
+</view>

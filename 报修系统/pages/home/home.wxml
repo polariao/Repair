@@ -1,0 +1,29 @@
+    <block wx:if='{{name}}'>
+<view  class="userinfo">
+        <image class="userinfo-avatar" src='{{image_url}}'></image>
+        <view class='name'>{{name}}</view>
+        <view class='sex'>
+        <block wx:if='{{gender==1}}'>
+            <view>男</view>
+            </block>
+            <block wx:elif='{{gender==2}}'>
+            <view>女</view>
+            </block>
+            <block wx:else>
+            <view>未知</view>
+            </block>
+            </view>
+  </view>
+ <button  bindtap='content'>详细资料</button>
+ <button  bindtap='all'>我的报修记录</button>
+  <button  bindtap='loading'>正在维修</button>
+   <button  bindtap='task'>已完成的报修</button>
+   <button  bindtap='tel'>小程序联系人：13034003710</button>
+   
+
+   </block> 
+    <block wx:else>
+    <button open-type="getUserInfo" bindgetuserinfo="userInfoHandler">微信登录</button>
+    </block>
+
+ <view class='vbs'>由vbs工作室提供技术支持</view>

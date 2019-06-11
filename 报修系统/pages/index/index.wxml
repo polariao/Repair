@@ -1,0 +1,51 @@
+<swiper indicator-dots="true" autoplay="true" interval="5000" duration="2000" indicator-active-color='red'>
+  <block wx:for="{{imgUrls}}" wx:key="this">
+    <swiper-item>
+      <image src="{{item}}" style='width:100%;height:100%'  />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='header'>请填写报修内容</view>
+<form bindsubmit="formSubmit" >
+
+<view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}"  range="{{array}}">
+    <view class="picker">
+      故障类型(默认)：{{array[index]}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <picker
+    mode="multiSelector" bindchange="bindMultiPickerChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="picker">
+     故障地点(默认)：{{multiArray[0][multiIndex[0]]}}{{multiArray[1][multiIndex[1]]}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+详细地址：<input class='dizhi' name='place' type='text' placeholder-style='text-align:center;font-size: 13px' placeholder='故障物所在的具体位置(选填)' />
+</view>
+<view class="section">
+故障详情：<textarea type='text' name='content'></textarea>
+</view>
+<view style='margin-top:60rpx;margin-left: 20rpx;'>上传图片:</view>
+<block wx:if="{{img == ''}}">
+<image bindtap='uploadimg' class='img' src='/images/add.png' />
+</block>
+<block wx:else>
+<image style='margin-left:200rpx; width:300rpx;height:200rpx'  src='{{img}}' />
+</block>
+
+<view class="section">
+报 修 人：<input type='text' name='name' />
+</view>
+<view class="section">
+联系方式：<input type='text' name='tel' />
+</view>
+ <view class="section">
+    <button  type='primary'  form-type="submit">提交</button>
+  </view>
+</form>

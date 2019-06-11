@@ -1,0 +1,32 @@
+/**index.wxss**/
+.userinfo {
+    
+  display: flex;
+  background-color: red;
+  align-items: center;
+}
+.name{
+  margin-left: 50rpx
+}
+.sex{
+  margin-left: 50rpx
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+   margin-left: 50rpx;
+  border-radius: 50%;
+}
+button{
+  margin-top: 30rpx;
+  text-align: left;
+
+}
+.vbs{
+   position: fixed;
+  text-align: center;
+  bottom: 30rpx;
+  left: 0;
+  right: 0;
+}

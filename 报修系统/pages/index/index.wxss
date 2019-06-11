@@ -1,0 +1,36 @@
+input{
+  width: 70%;
+  border: 2rpx solid #bbc0be;
+  border-radius:15rpx; 
+  margin-left: 185rpx;
+   margin-top: -40rpx
+}
+.section{
+  margin-left: 20rpx;
+  margin-top: 20rpx
+}
+textarea{
+  width: 70%;
+  height: 100rpx;
+  border: 2rpx solid #bbc0be;
+  border-radius:15rpx; 
+  margin-left: 185rpx;
+   margin-top: -40rpx
+}
+.header{
+  margin-top: 30rpx;
+  font-weight:bold;
+}
+.img{
+  width: 100rpx;
+    height: 100rpx;
+    margin-top: 60rpx;
+    margin-left: 185rpx;
+    margin-top: -60rpx
+}
+button{
+  margin-top: 20rpx;
+  margin-bottom: 60rpx;
+  width: 300rpx;
+  height: auto
+}
